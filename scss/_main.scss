@@ -1,0 +1,318 @@
+.title {
+    height: 85px;
+    width: 100%;
+    color: #fff;
+    background: #21386E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-size: 2em;
+    }
+}
+
+.jobTypeWrapper {
+   .jobTypeContainer {
+       display: flex;
+       .jobTypeItem {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           border: 1px solid #dfdfdf;;
+           img {
+               max-width: 100%;
+               height: auto;
+           }
+           h1 {
+               font-size: 2.5em;
+               font-weight: 900;
+               margin-top: .5em;
+           }
+           p {
+               line-height: 1.5em;
+               padding: 2em;
+           }
+       }
+   }
+}
+.interviewWrapper {
+    padding-bottom: 3em;
+    .profileContainer {
+        margin: 3em 0;
+        .profileWrapper {
+            display: flex;
+            margin-bottom: 3em;
+            img {
+                border-radius: 50%;
+                max-width: 250px;
+                max-height: 250px;
+                height: auto;
+            }
+            .profile {
+                margin-left: 2em;
+                h2 {
+                    display: inline-block;
+                    font-size: 1.3em;
+                    border: 1px solid #dfdfdf;
+                    padding: .5em .3em .3em;
+                }
+                h1 {
+                    font-size: 1.8em;
+                    font-weight: 900;
+                    margin: .5em 0;
+                }
+                p {
+                    line-height: 1.5em;
+                }
+                a {
+                    margin-top: 1em;
+                    display: inline-block;
+                    text-decoration: none;
+                    background: #06f;
+                    color: #fff;
+                    padding: .7em 1em;
+                    border-radius: 5px;
+                    &:hover {
+                        background: darken(#06f, 10%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.adWrapper {
+    p {
+        text-align: center;
+    }
+    .ad {
+        margin: 1em 0;
+        height: 280px;
+        width: 100%;
+        border: 1px solid #000;
+    }
+}
+
+.dataContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3em 0;
+    .dataItem {
+        background-color: #f7f7f7;
+        max-width: 49%;
+        height: 325px;
+        margin-bottom: 1em;
+        border: 1px solid #dfdfdf;
+        border-radius: 5px;
+        .dataHeader, .dataBody, .dataFooter {
+            padding: 0 1em;
+            display: flex;
+            align-items: center;
+        }
+        .dataHeader {
+            height: 50px;
+            width: 100%;
+            font-size: 1.3em;
+            border-bottom: 1px solid #dfdfdf;
+        }
+        .dataBody {
+            height: 200px;
+            background: #fff;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .dataFooter {
+            height: 75px;
+            border-top: 1px solid #dfdfdf;
+            line-height: 1.5em;
+        }
+    }
+    .averageAge {
+        .dataBody {
+            .dataBodyInner {
+                max-width: 100%;
+                max-height: 100%;
+                text-align: center;
+                line-height: 2.5em;
+                border: 1px solid #dfdfdf;
+                padding: 1em 6em;
+                h1 {
+                    font-weight: 900;
+                    font-size: 1.5em;
+                }
+                p {
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+}
+
+.processWrapper {
+    .container {
+        padding: 4em 0;
+        display: flex;
+        flex-direction: column;
+        .processItem {
+            display: flex;
+            padding: 1.5em 1em;
+            border: 1px solid #dfdfdf;
+            justify-content: space-between;
+            .processNumber {
+                font-size: 2em;
+                font-weight: 500;
+                background: #21386E;
+                color: #fff;
+                max-width: 60px;
+                width: 100%;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .processText {
+                max-width: 785px;
+                h1 {
+                    font-size: 1.3em;
+                    font-weight: 900;
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                }
+                p {
+                    line-height: 1.5em;
+                }
+            }
+            img {
+                width: 150px;
+                height: 150px;
+
+            }
+        }
+        .processArrow {
+            margin: 1.5em 0;
+            display: flex;
+            justify-content: center;
+            .triangle {
+                width: 0;
+                height: 0;
+                border-top: 25px solid #000;
+                border-left: 25px solid transparent;
+                border-right: 25px solid transparent;
+            }
+        }
+    }
+}
+
+.questionWrapper {
+    .container {
+        padding: 3em 0 0;
+        .questionItem {
+            margin-bottom: 3em;
+            .question,.answer {
+                display: flex;
+                align-items: center;
+                span {
+                    display: block;
+                    font-size: 2em;
+                    font-weight: 900;
+                    max-width: 1.5em;
+                    width: 100%;
+                    height: 1.5em;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 1.5em;
+                    margin-right: 1em;
+                }
+            }
+            .question {
+                border-bottom: 1px solid #dfdfdf;
+                margin-bottom: 1em;
+                padding-bottom: 1em;
+                span {
+                    background: #21386E;
+                    color: #fff;
+                }
+                h1 {
+                    font-size: 1.3em;
+                    font-weight: 900;
+                }
+            }
+            .answer {
+                span {
+                    border: 3px solid #21386E;
+                    border-radius: 50%;
+                    color: #21386E;
+                }
+                p {
+                    line-height: 1.5em;
+                }
+            }
+        }
+    }
+}
+.requirementsWrapper {
+    border-bottom: 1px solid #dfdfdf;
+    .container {
+        padding: 4em 0;
+        ul {
+            border: 1px solid #dfdfdf;
+            border-bottom: none;
+            li {
+                display: flex;
+                border-bottom: 1px solid #dfdfdf;
+                .list {
+                    max-width: 140px;
+                    width: 100%;
+                    padding: 1em;
+                    border-right: 1px solid #dfdfdf;
+                    font-weight: 900;
+                }
+                .text {
+                    padding: 1em;
+                    line-height: 1.5em;
+                    span {
+                        color: #6C757D;
+                    }
+                }
+            }
+        }
+    }
+}
+.entryWrapper{
+    .entryBtn {
+        padding: 4em 0;
+        border-bottom: 1px solid #dfdfdf;
+        display: flex;
+        justify-content: center;
+        a {
+            text-decoration: none;
+            display: block;
+            padding: .7em 1em;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: 900;
+        }
+        .new {
+            background: #fff;
+            border: 1px solid #DC3545;
+            color: #DC3545;
+            margin-right: 1em;
+            &:hover {
+                color: darken(#DC3545, 20%);
+            }
+        }
+        .old {
+            background: #DC3545;
+            border: 1px solid #DC3545;
+            color: #fff;
+            &:hover {
+                background: darken(#DC3545, 20%);
+                border: 1px solid darken(#DC3545, 20%);
+            }
+        }
+    }
+    .adWrapper {
+        margin: 2em 0 1em;
+    }
+}
